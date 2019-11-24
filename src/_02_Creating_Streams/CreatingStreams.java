@@ -10,23 +10,25 @@ public class CreatingStreams {
 	public static void main(String[] args) {
 		//1. Create a stream out of the following collections.
 		String[] strArr = {"one", "two", "three", "four"};
-		
+	
 		ArrayList<Integer> intList = new ArrayList<Integer>();
 		intList.add(1);
 		intList.add(2);
 		intList.add(3);
 		intList.add(4);
+		ArrayList<Integer> l = (ArrayList<Integer>) intList.stream();
 		
 		Stack<Random> randStack = new Stack<Random>();
 		randStack.push(new Random());
 		randStack.push(new Random());
 		randStack.push(new Random());
 		randStack.push(new Random());
-		
+		Stack<Random> s = (Stack<Random>) randStack.stream();
 		ArrayDeque<Double> dQueue = new ArrayDeque<Double>();
 		dQueue.push(0.0);
 		dQueue.push(1.0);
 		dQueue.push(2.0);
 		dQueue.push(3.0);
+		ArrayDeque<Double> d = (ArrayDeque<Double>) dQueue.stream();
 	}
 }
