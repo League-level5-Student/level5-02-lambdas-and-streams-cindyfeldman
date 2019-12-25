@@ -10,7 +10,7 @@ public class CreatingStreams {
 	public static void main(String[] args) {
 		//1. Create a stream out of the following collections.
 		String[] strArr = {"one", "two", "three", "four"};
-	
+
 		ArrayList<Integer> intList = new ArrayList<Integer>();
 		intList.add(1);
 		intList.add(2);
